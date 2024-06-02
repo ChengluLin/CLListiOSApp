@@ -55,6 +55,7 @@
 		BD2E8C9A2C0862DC00E5BB54 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E8C992C0862DC00E5BB54 /* LoginViewViewModel.swift */; };
 		BD2E8C9C2C0862EC00E5BB54 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E8C9B2C0862EC00E5BB54 /* RegisterViewViewModel.swift */; };
 		BD2E8C9E2C0862FF00E5BB54 /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E8C9D2C0862FF00E5BB54 /* ToDoListItemViewViewModel.swift */; };
+		BD5D9CBE2C09844B00304F2F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D9CBD2C09844B00304F2F /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		BD2E8C992C0862DC00E5BB54 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		BD2E8C9B2C0862EC00E5BB54 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		BD2E8C9D2C0862FF00E5BB54 /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
+		BD5D9CBD2C09844B00304F2F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,11 +163,12 @@
 			isa = PBXGroup;
 			children = (
 				BD2E8C352C06D8E800E5BB54 /* MainView.swift */,
+				BD2E8C872C082B8C00E5BB54 /* LoginView.swift */,
+				BD2E8C892C082BAD00E5BB54 /* RegisterView.swift */,
+				BD5D9CBD2C09844B00304F2F /* HeaderView.swift */,
 				BD2E8C812C082B3A00E5BB54 /* ProfileView.swift */,
 				BD2E8C832C082B6C00E5BB54 /* ToDoListView.swift */,
 				BD2E8C852C082B7D00E5BB54 /* NewItemView.swift */,
-				BD2E8C872C082B8C00E5BB54 /* LoginView.swift */,
-				BD2E8C892C082BAD00E5BB54 /* RegisterView.swift */,
 				BD2E8C8B2C08618C00E5BB54 /* ToDoListItemView.swift */,
 			);
 			path = Views;
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD2E8C882C082B8C00E5BB54 /* LoginView.swift in Sources */,
+				BD5D9CBE2C09844B00304F2F /* HeaderView.swift in Sources */,
 				BD2E8C362C06D8E800E5BB54 /* MainView.swift in Sources */,
 				BD2E8C9C2C0862EC00E5BB54 /* RegisterViewViewModel.swift in Sources */,
 				BD2E8C922C08629300E5BB54 /* MainViewViewModel.swift in Sources */,
