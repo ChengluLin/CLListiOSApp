@@ -25,7 +25,7 @@ struct HeaderView: View {
                     .foregroundStyle(.white)
                     .bold()
                 Text(subtitle)
-                    .font(.system(size: 30))
+                    .font(.system(size: 22))
                     .foregroundStyle(.white)
             }
             .padding(.top, 80)

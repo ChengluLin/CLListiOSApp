@@ -8,39 +8,38 @@
 import SwiftUI
 
 struct LoginView: View {
-    
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = LoginViewViewModel()
     
     var body: some View {
         NavigationView {
             VStack {
                 // Header
                 HeaderView(title: "CL List", subtitle: "Get things done", angle: -15, background: .cyan)
-                    .offset(y: -50)
+//                    .offset(y: -50)
                 
-                // Login Form
+
+                
                 Form {
-                    TextField("電子信箱", text: $email)
+                    
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundStyle(Color.red)
+                    }
+                    
+                    TextField("電子信箱", text: $viewModel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
-                    SecureField("密碼", text: $password)
+                    SecureField("密碼", text:$viewModel.password)
                         .textFieldStyle(DefaultTextFieldStyle())
                     
-                    Button {
-                        // Attempt log in
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundStyle(.blue)
-                            Text("Log In")
-                                .foregroundStyle(.white)
-                                .bold()
-                        }
-                    }
+                    CLButton(title: "登入",
+                             background: .blue,
+                             action: {
+                        viewModel.login()
+                    })
                     .padding()
                 }
                 .scrollDisabled(true)
-                .offset(y: -100)
+                .offset(y: -50)
                 
                 // Create Account
                 VStack {
@@ -48,7 +47,7 @@ struct LoginView: View {
                     NavigationLink("建立帳戶",
                                    destination: RegisterView())
                 }
-                .padding(.bottom, 50)
+//                .padding(.bottom, 50)
                 
                 Spacer()
             }
