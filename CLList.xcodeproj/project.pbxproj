@@ -56,6 +56,7 @@
 		BD2E8C9C2C0862EC00E5BB54 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E8C9B2C0862EC00E5BB54 /* RegisterViewViewModel.swift */; };
 		BD2E8C9E2C0862FF00E5BB54 /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E8C9D2C0862FF00E5BB54 /* ToDoListItemViewViewModel.swift */; };
 		BD5C11CA2C0D6CD6007EA5B4 /* CLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5C11C92C0D6CD6007EA5B4 /* CLButton.swift */; };
+		BD5C11CC2C0EFD07007EA5B4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5C11CB2C0EFD07007EA5B4 /* Extensions.swift */; };
 		BD5D9CBE2C09844B00304F2F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D9CBD2C09844B00304F2F /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		BD2E8C9B2C0862EC00E5BB54 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		BD2E8C9D2C0862FF00E5BB54 /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
 		BD5C11C92C0D6CD6007EA5B4 /* CLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLButton.swift; sourceTree = "<group>"; };
+		BD5C11CB2C0EFD07007EA5B4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BD5D9CBD2C09844B00304F2F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,6 +207,7 @@
 			children = (
 				BD2E8C7A2C08218A00E5BB54 /* GoogleService-Info.plist */,
 				BD2E8C332C06D8E800E5BB54 /* CLListApp.swift */,
+				BD5C11CB2C0EFD07007EA5B4 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				BD2E8C962C0862B100E5BB54 /* ToDoListViewViewModel.swift in Sources */,
 				BD2E8C9A2C0862DC00E5BB54 /* LoginViewViewModel.swift in Sources */,
 				BD2E8C342C06D8E800E5BB54 /* CLListApp.swift in Sources */,
+				BD5C11CC2C0EFD07007EA5B4 /* Extensions.swift in Sources */,
 				BD2E8C902C0861EC00E5BB54 /* ToDoListItem.swift in Sources */,
 				BD2E8C862C082B7D00E5BB54 /* NewItemView.swift in Sources */,
 				BD2E8C982C0862CE00E5BB54 /* NewItemViewViewModel.swift in Sources */,

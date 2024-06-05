@@ -15,9 +15,7 @@ struct LoginView: View {
             VStack {
                 // Header
                 HeaderView(title: "CL List", subtitle: "Get things done", angle: -15, background: .cyan)
-//                    .offset(y: -50)
-                
-
+                    .offset(y: 50)
                 
                 Form {
                     
@@ -39,7 +37,7 @@ struct LoginView: View {
                     .padding()
                 }
                 .scrollDisabled(true)
-                .offset(y: -50)
+//                .offset(y: -50)
                 
                 // Create Account
                 VStack {

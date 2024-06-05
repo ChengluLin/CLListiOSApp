@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @State var name = ""
-    @State var email = ""
-    @State var password = ""
-
+    @StateObject var viewModel = RegisterViewViewModel()
     
     var body: some View {
         VStack {
@@ -19,21 +16,24 @@ struct RegisterView: View {
             HeaderView(title: "註冊", subtitle: "開始申請帳號流程", angle: 15, background: .orange)
             
             Form {
-                TextField("Full name", text: $name)
+                TextField("Full name", text: $viewModel.name)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .textInputAutocapitalization(.none)
                     .autocorrectionDisabled()
-                TextField("電子信箱", text: $email)
+                TextField("電子信箱", text: $viewModel.email)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .autocapitalization(.none)
                     .autocorrectionDisabled()
-                TextField("密碼", text: $password)
+                SecureField("密碼", text: $viewModel.password)
                     .textFieldStyle(DefaultTextFieldStyle())
+                
+                
                 CLButton(
                     title: "創建帳號",
-                    background: .green) {
-                        // Attemp registration
-                    }
+                    background: .green
+                ) {
+                    viewModel.register()
+                }
             }
             .scrollDisabled(true)
             .offset(y: -50)
