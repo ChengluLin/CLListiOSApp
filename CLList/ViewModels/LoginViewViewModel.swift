@@ -23,6 +23,8 @@ class LoginViewViewModel: ObservableObject {
         }
         
         // Try log in
+        UserDefaults.standard.set(email, forKey: "userEmail")
+//        userDefaults.value(forKey: "userEmail")
         Auth.auth().signIn(withEmail: email, password: password)
     }
     
