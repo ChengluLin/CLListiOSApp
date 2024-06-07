@@ -168,10 +168,10 @@
 			children = (
 				BD2E8C352C06D8E800E5BB54 /* MainView.swift */,
 				BD2E8C812C082B3A00E5BB54 /* ProfileView.swift */,
+				BD2E8C832C082B6C00E5BB54 /* ToDoListView.swift */,
 				BD2E8C852C082B7D00E5BB54 /* NewItemView.swift */,
 				BD2E8C872C082B8C00E5BB54 /* LoginView.swift */,
 				BD2E8C892C082BAD00E5BB54 /* RegisterView.swift */,
-				BD2E8C832C082B6C00E5BB54 /* ToDoListView.swift */,
 				BD5D9CBD2C09844B00304F2F /* HeaderView.swift */,
 				BD2E8C8B2C08618C00E5BB54 /* ToDoListItemView.swift */,
 				BD5C11C92C0D6CD6007EA5B4 /* CLButton.swift */,

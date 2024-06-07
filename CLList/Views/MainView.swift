@@ -12,7 +12,7 @@ struct MainView: View {
     
     var body: some View {
         
-        if UserDefaults.standard.value(forKey: "userEmail") != nil {
+        if let userEmail = UserDefaults.standard.value(forKey: "userEmail") {
             accountView
         } else {
             LoginView()
