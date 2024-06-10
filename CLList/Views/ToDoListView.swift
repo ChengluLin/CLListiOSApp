@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
 
 struct ToDoListView: View {
     @StateObject var viewModel = ToDoListViewViewModel()
+//    @FirestoreQuery var items: [ToDoListItem]
     
     private let userId: String
     
     init(userId: String) {
         self.userId = userId
+        // users/<id>/todos/<entries>
     }
     
     var body: some View {
