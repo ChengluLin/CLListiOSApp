@@ -15,7 +15,12 @@ struct CLListApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            MainView()
+//            if let userEmail = UserDefaults.standard.value(forKey: "userEmail") {
+                MainView()
+//            } else {
+//                LoginView()
+//            }
+            
         }
     }
 }

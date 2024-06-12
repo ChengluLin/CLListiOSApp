@@ -12,17 +12,17 @@ struct MainView: View {
     
     var body: some View {
         
-        if let userEmail = UserDefaults.standard.value(forKey: "userEmail") {
-            accountView
-        } else {
-            LoginView()
-        }
-        
-//        if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
+//        if let userEmail = UserDefaults.standard.value(forKey: "userEmail") {
 //            accountView
 //        } else {
 //            LoginView()
 //        }
+        
+        if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
+            accountView
+        } else {
+            LoginView()
+        }
     }
     
     @ViewBuilder
