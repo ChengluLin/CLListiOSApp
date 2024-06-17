@@ -6,13 +6,17 @@
 //
 
 import Foundation
+import FirebaseAuth
+import FirebaseFirestore
 
 class ProfileViewViewModel: ObservableObject {
     init() {
         
     }
     
-    func toggleIsDone(item: ToDoListItem) {
+    func logOut() {
         
     }
+
+    
 }
