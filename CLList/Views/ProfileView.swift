@@ -17,44 +17,61 @@ struct ProfileView: View {
     var body: some View {
         NavigationView {
             VStack {
-                // Avatar
-                Image(systemName: "person.circle")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundStyle(Color.blue)
-                    .frame(width: 125, height: 125)
-                
-                // Info: Name, Email, Member since
-                VStack(alignment: .leading) {
-                    HStack {
-                        Text("Name: ")
-                        Text("Afraz Siddiqui")
-                    }
-                    HStack {
-                        Text("Email: ")
-                        Text("Afraz Siddiqui")
-                    }
-                    HStack {
-                        Text("Member Since: ")
-                        Text("Afraz Siddiqui")
-                    }
+                if let user = viewModel.user {
+                    profile(user: user)
+                } else {
+                    Text("Loading Profile...")
                 }
-                // Sign out
-                Button("Log Out") {
-                    viewModel.logOut()
-                }
-                .tint(.red)
-
-                
-                
-                
-                Spacer()
-                
             }
             .navigationTitle("Profile")
-                
+        }
+        .onAppear {
+            viewModel.fetchUser()
         }
     }
+    
+    @ViewBuilder
+    func profile(user: User) -> some View {
+        Image(systemName: "person.circle")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .foregroundStyle(Color.blue)
+            .frame(width: 125, height: 125)
+            .padding()
+        
+        // Info: Name, Email, Member since
+        VStack(alignment: .leading) {
+            HStack {
+                Text("Name: ")
+                    .bold()
+                Text(user.name)
+            }
+            .padding()
+            HStack {
+                Text("Email: ")
+                    .bold()
+                Text(user.email)
+            }
+            .padding()
+            HStack {
+                Text("Member Since: ")
+                    .bold()
+                Text("\(Date(timeIntervalSince1970: user.joined).formatted(date: .abbreviated, time: .shortened))")
+            }
+            .padding()
+        }
+        .padding()
+
+        // Sign out
+        Button("Log Out") {
+            viewModel.logOut()
+        }
+        .tint(.red)
+        .padding()
+
+        Spacer()
+    }
+    
 }
 
 #Preview {
