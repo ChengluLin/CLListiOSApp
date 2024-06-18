@@ -36,7 +36,7 @@ struct LoginView: View {
                     })
                     .padding()
                 }
-                .scrollDisabled(true)
+//                .scrollDisabled(true)
 //                .offset(y: -50)
                 
                 // Create Account

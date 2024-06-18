@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD095F462C212E9800725149 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD095F452C212E9800725149 /* Launch Screen.storyboard */; };
 		BD2E8C342C06D8E800E5BB54 /* CLListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E8C332C06D8E800E5BB54 /* CLListApp.swift */; };
 		BD2E8C362C06D8E800E5BB54 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E8C352C06D8E800E5BB54 /* MainView.swift */; };
 		BD2E8C382C06D8E900E5BB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD2E8C372C06D8E900E5BB54 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD095F452C212E9800725149 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		BD2E8C302C06D8E800E5BB54 /* CLList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2E8C332C06D8E800E5BB54 /* CLListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLListApp.swift; sourceTree = "<group>"; };
 		BD2E8C352C06D8E800E5BB54 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -149,7 +151,6 @@
 				BD2E8C7F2C0824BD00E5BB54 /* Models */,
 				BD2E8C7D2C0824A400E5BB54 /* ViewModels */,
 				BD2E8C7C2C08249800E5BB54 /* Views */,
-				BD2E8C372C06D8E900E5BB54 /* Assets.xcassets */,
 				BD2E8C392C06D8E900E5BB54 /* Preview Content */,
 			);
 			path = CLList;
@@ -205,9 +206,11 @@
 		BD2E8C802C0824C600E5BB54 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				BD2E8C372C06D8E900E5BB54 /* Assets.xcassets */,
 				BD2E8C7A2C08218A00E5BB54 /* GoogleService-Info.plist */,
 				BD2E8C332C06D8E800E5BB54 /* CLListApp.swift */,
 				BD5C11CB2C0EFD07007EA5B4 /* Extensions.swift */,
+				BD095F452C212E9800725149 /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			files = (
 				BD2E8C3B2C06D8E900E5BB54 /* Preview Assets.xcassets in Resources */,
 				BD2E8C382C06D8E900E5BB54 /* Assets.xcassets in Resources */,
+				BD095F462C212E9800725149 /* Launch Screen.storyboard in Resources */,
 				BD2E8C7B2C08218A00E5BB54 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +480,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,6 +511,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
