@@ -1,6 +1,6 @@
 # SwiftUI CLList
 
-[![image](https://github.com/ChengluLin/CLListiOSApp/blob/main/Image/CLListIcon.png)]
+![image](https://github.com/ChengluLin/CLListiOSApp/blob/main/Image/CLListIcon.png)
 
 Written in Swift 5 with MVVM architecture.
 
