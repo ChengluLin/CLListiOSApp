@@ -35,10 +35,14 @@ struct RegisterView: View {
                     viewModel.register()
                 }
             }
-            .scrollDisabled(true)
+//            .scrollDisabled(true)
+            .frame(height: 300)
             .offset(y: -50)
             
             Spacer()
+        }
+        .onTapGesture {
+            self.hideKeyboard()
         }
     }
 }

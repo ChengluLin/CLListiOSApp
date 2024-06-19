@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BD095F462C212E9800725149 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD095F452C212E9800725149 /* Launch Screen.storyboard */; };
+		BD095F482C21644200725149 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD095F472C21644200725149 /* KeyboardResponder.swift */; };
+		BD095F4A2C21663200725149 /* KeyboardResponsiveModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD095F492C21663200725149 /* KeyboardResponsiveModifier.swift */; };
 		BD2E8C342C06D8E800E5BB54 /* CLListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E8C332C06D8E800E5BB54 /* CLListApp.swift */; };
 		BD2E8C362C06D8E800E5BB54 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E8C352C06D8E800E5BB54 /* MainView.swift */; };
 		BD2E8C382C06D8E900E5BB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD2E8C372C06D8E900E5BB54 /* Assets.xcassets */; };
@@ -63,6 +65,8 @@
 
 /* Begin PBXFileReference section */
 		BD095F452C212E9800725149 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		BD095F472C21644200725149 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		BD095F492C21663200725149 /* KeyboardResponsiveModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponsiveModifier.swift; sourceTree = "<group>"; };
 		BD2E8C302C06D8E800E5BB54 /* CLList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2E8C332C06D8E800E5BB54 /* CLListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLListApp.swift; sourceTree = "<group>"; };
 		BD2E8C352C06D8E800E5BB54 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 				BD2E8C7A2C08218A00E5BB54 /* GoogleService-Info.plist */,
 				BD2E8C332C06D8E800E5BB54 /* CLListApp.swift */,
 				BD5C11CB2C0EFD07007EA5B4 /* Extensions.swift */,
+				BD095F472C21644200725149 /* KeyboardResponder.swift */,
+				BD095F492C21663200725149 /* KeyboardResponsiveModifier.swift */,
 				BD095F452C212E9800725149 /* Launch Screen.storyboard */,
 			);
 			path = Other;
@@ -322,7 +328,9 @@
 			files = (
 				BD2E8C882C082B8C00E5BB54 /* LoginView.swift in Sources */,
 				BD5D9CBE2C09844B00304F2F /* HeaderView.swift in Sources */,
+				BD095F482C21644200725149 /* KeyboardResponder.swift in Sources */,
 				BD2E8C362C06D8E800E5BB54 /* MainView.swift in Sources */,
+				BD095F4A2C21663200725149 /* KeyboardResponsiveModifier.swift in Sources */,
 				BD2E8C9C2C0862EC00E5BB54 /* RegisterViewViewModel.swift in Sources */,
 				BD5C11CA2C0D6CD6007EA5B4 /* CLButton.swift in Sources */,
 				BD2E8C922C08629300E5BB54 /* MainViewViewModel.swift in Sources */,

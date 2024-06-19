@@ -15,7 +15,7 @@ struct LoginView: View {
             VStack {
                 // Header
                 HeaderView(title: "CL List", subtitle: "Get things done", angle: -15, background: .cyan)
-                    .offset(y: 50)
+//                    .offset(y: -100)
                 
                 Form {
                     
@@ -37,7 +37,8 @@ struct LoginView: View {
                     .padding()
                 }
 //                .scrollDisabled(true)
-//                .offset(y: -50)
+                .frame(height: 300)
+//                .offset(y: -100)
                 
                 // Create Account
                 VStack {
@@ -45,14 +46,30 @@ struct LoginView: View {
                     NavigationLink("建立帳戶",
                                    destination: RegisterView())
                 }
-//                .padding(.bottom, 50)
+                .frame(height: 30)
+                .padding(.top, 0)
                 
                 Spacer()
             }
+            .frame(height: 400)
+            .onTapGesture {
+                self.hideKeyboard()
+            }
         }
+//        .onTapGesture {
+//            self.hideKeyboard()
+//
+//        }
     }
 }
 
 #Preview {
     LoginView()
+}
+
+
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
 }
