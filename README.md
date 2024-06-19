@@ -1,6 +1,6 @@
 # SwiftUI CLList
 
-[![image](https://github.com/ChengluLin/CLSpotifyiOSApp/blob/main/image/lgo512.png)](https://developer.spotify.com/documentation/ios)
+[![image](https://github.com/ChengluLin/CLListiOSApp/blob/main/Image/CLListIcon.png)]
 
 Written in Swift 5 with MVVM architecture.
 
@@ -15,17 +15,22 @@ Written in Swift 5 with MVVM architecture.
 
 The app will focus on four key areas:
 
-1.User Authentication:
+User Authentication:
 Log in and sign up for an account.
 
-2.Calendar Management:
+Calendar Management:
+
 Add events to the calendar.
 Select date and time.
 Set event titles.
 
-3.Task Completion:
+
+Task Completion:
+
 Mark tasks as completed.
 
-4.Data Persistence:
+
+Data Persistence:
+
 Permanently store all lists.
 
